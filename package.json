@@ -1,6 +1,7 @@
 {
   "name": "react-material",
   "version": "0.1.0",
+  "homepage": "https://starikov03.github.io/react-material-ui-app",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
@@ -19,6 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,6 +46,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.20.0"
+    "eslint": "^8.20.0",
+    "gh-pages": "^4.0.0"
   }
 }
